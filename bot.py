@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 PORT = os.environ.get("PORT")
 MODE = os.environ.get("MODE") or "local"
-TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "8120151974:AAHGPvEyMY_k6HFyVyaxa4cAsRUtybP-qVM")
 WEBHOOK_BASE = os.environ.get("WEBHOOK_URL")
 WEBHOOK_URL = f"{WEBHOOK_BASE}/{TOKEN}" if WEBHOOK_BASE and TOKEN else None
 IMGUR_CLIENT = os.environ.get("IMGUR_CLIENT") or os.environ.get("IMGUR_KEY")
